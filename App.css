@@ -1,0 +1,41 @@
+.jumbotron {
+  width: 30%;
+}
+
+.Header {
+  width: 100%;
+  text-align: center;
+}
+
+.wrapper {
+  background-image: url(./images/limboHangman.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.gameBoard {
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+  color: white;
+}
+
+/* .buttonBoard {
+  width: 100%;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+} */
+
+/* .cardHeader {
+  text-align: center;
+} */
+
+/* .row {
+  width: 100%;
+} */
