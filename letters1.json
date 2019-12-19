@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "image": "./assets/A.png",
+    "clicked": false,
+    "letterKey": 65
+  },
+  {
+    "id": 2,
+    "image": "./assets/B.png",
+    "clicked": false,
+    "letterKey": 66
+  },
+  {
+    "id": 3,
+    "image": "./assets/C.png",
+    "clicked": false,
+    "letterKey": 67
+  },
+  {
+    "id": 4,
+    "image": "./assets/D.png",
+    "clicked": false,
+    "letterKey": 68
+  },
+  {
+    "id": 5,
+    "image": "./assets/E.png",
+    "clicked": false,
+    "letterKey": 69
+  },
+  {
+    "id": 6,
+    "image": "./assets/F.png",
+    "clicked": false,
+    "letterKey": 70
+  },
+  {
+    "id": 7,
+    "image": "./assets/G.png",
+    "clicked": false,
+    "letterKey": 71
+  }
+]

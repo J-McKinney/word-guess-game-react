@@ -1,8 +1,9 @@
 .jumbotron {
   width: 30%;
+  text-align: center;
 }
 
-.Header {
+.header {
   width: 100%;
   text-align: center;
 }
@@ -22,20 +23,12 @@
   color: white;
 }
 
-/* .buttonBoard {
+.row {
   width: 100%;
   text-align: center;
   color: white;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-content: flex-start;
-} */
-
-/* .cardHeader {
-  text-align: center;
-} */
-
-/* .row {
-  width: 100%;
-} */
+}

@@ -1,7 +1,7 @@
 import React from "react";
-import "./ButtonBoard.css";
+import "./ButtonBoard4.css";
 
-const ButtonBoard = props => {
+const ButtonBoard4 = props => {
   return (
     <div onClick={() => props.setClicked(props.id)} className="card col-md-1">
       <div className="img-container">
@@ -11,4 +11,4 @@ const ButtonBoard = props => {
   );
 };
 
-export default ButtonBoard;
+export default ButtonBoard4;
