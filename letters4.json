@@ -3,36 +3,42 @@
     "id": 21,
     "image": "./assets/U.png",
     "clicked": false,
-    "letterKey": 85
+    "letterKey": 85,
+    "key": 21
   },
   {
     "id": 22,
     "image": "./assets/V.png",
     "clicked": false,
-    "letterKey": 86
+    "letterKey": 86,
+    "key": 22
   },
   {
     "id": 23,
     "image": "./assets/W.png",
     "clicked": false,
-    "letterKey": 87
+    "letterKey": 87,
+    "key": 23
   },
   {
     "id": 24,
     "image": "./assets/X.png",
     "clicked": false,
-    "letterKey": 88
+    "letterKey": 88,
+    "key": 24
   },
   {
     "id": 25,
     "image": "./assets/Y.png",
     "clicked": false,
-    "letterKey": 89
+    "letterKey": 89,
+    "key": 25
   },
   {
     "id": 26,
     "image": "./assets/Z.png",
     "clicked": false,
-    "letterKey": 90
+    "letterKey": 90,
+    "key": 26
   }
 ]

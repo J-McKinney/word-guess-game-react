@@ -17,11 +17,14 @@ import "./App.css";
 let guessesLeft = 10;
 let message = "";
 let indexWord;
-// let lettersGuessed = [];
+let lettersGuessed = [];
 let secretWord = ["SECRETWORD"];
 let buildingWord = [];
-// let startGame = false;
-// let endGame = false;
+let startGame = false;
+let endGame = false;
+// let alphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 class App extends Component {
   state = {
@@ -36,6 +39,11 @@ class App extends Component {
 
   componentDidMount() {
     this.playGame();
+    document.addEventListener("keydown", this.onKeyDown);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.onKeyDown);
   }
 
   playGame = () => {
@@ -48,6 +56,48 @@ class App extends Component {
     this.setState({ buildingWord });
     console.log(buildingWord);
   };
+
+  userGuess = letter => {
+    if (guessesLeft > 0) {
+      if (!startGame) {
+        startGame = true;
+      }
+      if (lettersGuessed.indexOf(letter) === -1) {
+        lettersGuessed.push(letter);
+        this.check(letter);
+      }
+    }
+  };
+
+  check = letter => {
+    var letterPos = [];
+    for (var i = 0; i < secretWord[indexWord].length; i++) {
+      if (secretWord[indexWord][i] === letter) {
+        letterPos.push(i);
+      }
+    }
+    if (letterPos.length <= 0) {
+      guessesLeft--;
+    } else {
+      for (var j = 0; i < letterPos.length; j++) {
+        buildingWord[letterPos[j]] = letter;
+      }
+    }
+  };
+
+  onKeyDown = event => {
+    console.log(event.key.toUpperCase());
+    if (endGame) {
+      this.playGame();
+      endGame = false;
+    } else {
+      if (event.keyCode >= 65 && event.keyCode <= 90) {
+        this.userGuess(event.key.toUpperCase());
+      }
+    }
+  };
+
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   render() {
     return (
@@ -70,7 +120,7 @@ class App extends Component {
               <ButtonBoard1
                 setClicked={this.setClicked}
                 id={match.id}
-                key={match.id}
+                letterKey={match.id}
                 image={match.image}
               />
             ))}
@@ -81,7 +131,7 @@ class App extends Component {
               <ButtonBoard2
                 setClicked={this.setClicked}
                 id={match.id}
-                key={match.id}
+                letterKey={match.id}
                 image={match.image}
               />
             ))}
@@ -92,7 +142,7 @@ class App extends Component {
               <ButtonBoard3
                 setClicked={this.setClicked}
                 id={match.id}
-                key={match.id}
+                letterKey={match.id}
                 image={match.image}
               />
             ))}
@@ -103,7 +153,7 @@ class App extends Component {
               <ButtonBoard4
                 setClicked={this.setClicked}
                 id={match.id}
-                key={match.id}
+                letterKey={match.id}
                 image={match.image}
               />
             ))}

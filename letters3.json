@@ -3,42 +3,49 @@
     "id": 14,
     "image": "./assets/N.png",
     "clicked": false,
-    "letterKey": 78
+    "letterKey": 78,
+    "key": 14
   },
   {
     "id": 15,
     "image": "./assets/O.png",
     "clicked": false,
-    "letterKey": 79
+    "letterKey": 79,
+    "key": 15
   },
   {
     "id": 16,
     "image": "./assets/P.png",
     "clicked": false,
-    "letterKey": 80
+    "letterKey": 80,
+    "key": 16
   },
   {
     "id": 17,
     "image": "./assets/Q.png",
     "clicked": false,
-    "letterKey": 81
+    "letterKey": 81,
+    "key": 17
   },
   {
     "id": 18,
     "image": "./assets/R.png",
     "clicked": false,
-    "letterKey": 82
+    "letterKey": 82,
+    "key": 18
   },
   {
     "id": 19,
     "image": "./assets/S.png",
     "clicked": false,
-    "letterKey": 83
+    "letterKey": 83,
+    "key": 19
   },
   {
     "id": 20,
     "image": "./assets/T.png",
     "clicked": false,
-    "letterKey": 84
+    "letterKey": 84,
+    "key": 20
   }
 ]
